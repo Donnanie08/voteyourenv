@@ -13,28 +13,28 @@
     <div class="container">
         <h1>Vote Your Environment</h1>
         <p>Vote your enviroment!</p>
-        <form id="vote-form">
+        <form id="vote-form-2">
             <p>
-                <input type="radio" name="env" id="kindle" value="Kindle">
-                <label for="kindle">Kindle</label>
+                <input type="radio" name="veh" id="car" value="Car">
+                <label for="car">Car</label>
             </p>
             <p>
-                <input type="radio" name="env" id="paper" value="Paper">
-                <label for="paper">Paper</label>
+                <input type="radio" name="veh" id="bike" value="Bike">
+                <label for="bike">Bike</label>
             </p>
 
-            <input type="submit" value="Vote" class="btn" onclick=goToQuesTwo()>
+            <input type="submit" value="Vote" class="btn" onclick=backHome()>
         </form>
 
         <br>
         <br>
 
-        <div id="chartContainer" style="height:300px;width:100%"></div>
+        <div id="chartContainer2" style="height:300px;width:100%"></div>
     </div>
 
     <script>
-        function goToQuesTwo() {
-            window.location.href = "quesTwo.html";
+        function backHome() {
+            window.location.href = "index.html#livevote";
         }
     </script>
 
