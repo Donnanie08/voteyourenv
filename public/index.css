@@ -137,3 +137,95 @@ nav li:hover {
 nav a#openup {
     display: none;
 }
+
+
+@media screen and (max-width: 580px) {
+    .hide-on-small {
+        display: none;
+    }
+
+    #homepage {
+        height: 100vh;
+    }
+
+    #homepage .container {
+        margin-top: 15vh;
+    }
+
+    #homepage h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+    nav a:hover {
+        background: #444;
+    }
+    nav a#openup:after {
+        content: '|||';
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+    nav a#openup {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+}
+.cf:before,
+.cf:after {
+    content: '';
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+@media screen and (max-width: 780px) {
+    .gift-cards {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-cols {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 580px) {
+    #showcase p.lead {
+        display: none;
+    }
+}
