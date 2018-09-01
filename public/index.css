@@ -1,4 +1,139 @@
-[type="radio"]:not(:checked), [type="radio"]:checked {
-    position: relative; 
-    opacity: 1; 
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* CSS Variables */
+:root {
+    --primary-color: #545758;
+    --primary-color-hover: #222527;
+    --secondary-color: #103063;
+    --secondary-color-hover: #143f85;
+    --light-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* body */
+body {
+    font-family: 'PT Sans', sans-serif;
+    /*background: linear-gradient(to bottom, #A7AFB1, #D8DEE0, #F6F9F2, #FEFAD3, #E7A94F);*/
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Section */
+.section {
+    background: linear-gradient(to bottom, #A7AFB1, #D8DEE0, #F6F9F2, #FEFAD3, #E7A94F);
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 0;
+}
+
+.section-head {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.section h3 {
+    font-size: 2rem;
+}
+
+/* homepage */
+#homepage {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #A7AFB1, #D8DEE0, #F6F9F2, #FEFAD3, #E7A94F) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#homepage .container {
+    margin-top: 25vh;
+}
+
+#homepage h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#homepage h2 {
+    font-size: 2rem;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    padding: 1rem;
+    color: #fff;
+    display: inline-block;
+    border: 0px;
+    border-radius: 10px;
+
+}
+
+.btn-primary {
+    background: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--primary-color-hover);
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color-hover);
+}
+
+
+/* Navigation */
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    position: fixed;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline;
+    float: left;
+}
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+}
+nav li:hover {
+    background-color: #444;
+}
+nav a#openup {
+    display: none;
 }

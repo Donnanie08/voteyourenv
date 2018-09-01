@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+          crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>VoteYourEnv</title>
+    <title>Vote Your Env</title>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Vote Your Environment</h1>
-        <p>Vote your enviroment!</p>
-        <form id="vote-form">
-            <p>
-                <input type="radio" name="env" id="kindle" value="Kindle">
-                <label for="kindle">Kindle</label>
-            </p>
-            <p>
-                <input type="radio" name="env" id="paper" value="Paper">
-                <label for="paper">Paper</label>
-            </p>
-            <input type="submit" value="Vote" class="btn">
-        </form>
+    <!-- Homepage -->
+    <div id="homepage">
+        <header>
+            <nav class='cf'>
+                <ul class='cf'>
+                    <li class="hide-on-small">
+                        <a href="#homepage">Homepage</a>
+                    </li>
+                    <li>
+                        <a href='#livevote'>Live Vote</a>
+                    </li>
+                    <li>
+                        <a href='#overview'>Overview</a>
+                    </li>
+                </ul>
+                <a href='#' id='openup'>myHome</a>
+            </nav>
+        </header>
 
-        <br>
-        <br>
-
-        <div id="chartContainer" style="height:300px;width:100%"></div>
+        <div class="section-main container">
+            <h1>Vote For Our Environment.</h1>
+            <h2>Your environment stage.</h2>
+            <p class="lead hide-on-small">
+                PUT SOMETHING HERE
+            </p>
+            <a href="quesOne.html" class="btn btn-primary mb">Start Your Vote Now</a>
+        </div>
     </div>
-    
+
+    <!-- livevote Section -->
+    <section id="livevote" class="section">
+        <div class="container">
+        </div>
+    </section>
+
+    <!-- overview Section -->
+    <section id="overview" class="section">
+        <div class="container">
+        </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -39,5 +61,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.3.0/pusher.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 </html>
