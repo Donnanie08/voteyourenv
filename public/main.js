@@ -53,6 +53,8 @@ fetch('http://localhost:3000/poll').then(res => res.json())
             ]
         });
         chart.render();
+
+        //add liveview here
     
         //implement Pusher
         // Enable pusher logging - don't include this in production

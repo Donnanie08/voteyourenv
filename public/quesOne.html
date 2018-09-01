@@ -23,18 +23,35 @@
                 <label for="paper">Paper</label>
             </p>
 
-            <input type="submit" value="Vote" class="btn" onclick=goToQuesTwo()>
+            <input type="submit" value="Vote" class="btn" onclick=backHome()>
         </form>
 
         <br>
         <br>
 
         <div id="chartContainer" style="height:300px;width:100%"></div>
+
+        <p>
+            <button onclick=showImg() class="btn">Add Img</button>
+            
+        </p>
     </div>
 
     <script>
         function goToQuesTwo() {
             window.location.href = "quesTwo.html";
+        }
+        function backHome() {
+            window.location.href = "index.html#livevote";
+        }
+
+        function showImg(){
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "http://www.onlygfx.com/wp-content/uploads/2016/10/watercolor-cloud-1.png");
+            x.setAttribute("width", "304");
+            x.setAttribute("height", "228");
+            x.setAttribute("alt", "cloud");
+            document.getElementById("imageDiv").appendChild(x);
         }
     </script>
 
