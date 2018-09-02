@@ -63,7 +63,7 @@ fetch('http://localhost:3000/poll2').then(res => res.json())
             title: {
                 text: `Total Vehicle Votes: ${totalVotes}`,
                 fontColor: "#364E4F",
-                fontSize: 30
+                fontSize: 20
             },
             data: [
                 {
