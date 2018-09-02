@@ -10,6 +10,31 @@ fetch('http://localhost:3000/poll').then(res => res.json())
     );
 
 
+    let dataPoints = [
+        {label: 'Kindle', y: voteCounts.Kindle},
+        {label: 'Paper', y: voteCounts.Paper}
+    ];
+    Pusher.logToConsole = true;
+
+    var pusher = new Pusher('d3992811c04d6474365b', {
+      cluster: 'us2',
+      encrypted: true
+    });
+
+    var channel = pusher.subscribe('env-poll');
+    channel.bind('env-vote', function(data) {
+        //add data to chart
+        dataPoints = dataPoints.map(x => {
+            if(x.label == data.env){
+                x.y += data.points;
+                return x;
+            }else{
+                return x;
+            }
+        });
+        addTree();
+      });
+
     function addTree() {
       var x = document.createElement("IMG");
       x.style.position = "absolute";
@@ -49,6 +74,16 @@ fetch('http://localhost:3000/poll2').then(res => res.json())
         {}
     );
 
+    var pusher = new Pusher('5df99ea18c802431eb03', {
+      cluster: 'us2',
+      forceTLS: true
+    });
+
+    var channel = pusher.subscribe('vehicle-poll');
+    channel.bind('vehicle-vote', function(data) {
+        //add data to chart
+        addCloud();
+      });
 
     function addCloud() {
       var x = document.createElement("IMG");
