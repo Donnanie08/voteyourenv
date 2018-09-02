@@ -8,7 +8,6 @@ fetch('http://localhost:3000/poll').then(res => res.json())
         (acc[vote.env] = (acc[vote.env] || 0) + parseInt(vote.points)), acc),
         {}
     );
-    console.log(voteCounts.Paper);
     function addCloud() {
       var x = document.createElement("IMG");
       x.setAttribute("src", "http://www.onlygfx.com/wp-content/uploads/2016/10/watercolor-cloud-1.png");
@@ -29,8 +28,13 @@ fetch('http://localhost:3000/poll').then(res => res.json())
       x.setAttribute("id", "cloud0");
 
       document.getElementById('imageDiv').appendChild(x);
-      x.style.top = Math.round(Math.random() * w + screen.height) + "px";
-      x.style.left = Math.round(Math.random() * h) + "px";
+
+      // x.style.top = Math.round(Math.random() * w) + "px";
+      // x.style.left = Math.round(Math.random() * h) + "px";
+      console.log(Math.round(Math.random() * 33.33))
+      x.style.top = Math.round(Math.random() * 20)+100 + "vh";
+      x.style.left = Math.round(Math.random() * 80) + "vw";
+
     }
 
     var i;
