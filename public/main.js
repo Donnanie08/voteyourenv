@@ -99,7 +99,6 @@ fetch('http://localhost:3000/poll').then(res => res.json())
                 }else{
                     return x;
                 }
-                console.log(data);
             });
             //re-render the chart to update
             chart.render();
