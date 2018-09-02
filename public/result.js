@@ -32,7 +32,7 @@ fetch('http://localhost:3000/poll').then(res => res.json())
       // x.style.top = Math.round(Math.random() * w) + "px";
       // x.style.left = Math.round(Math.random() * h) + "px";
       console.log(Math.round(Math.random() * 33.33))
-      x.style.top = Math.round(Math.random() * 20)+100 + "vh";
+      x.style.top = Math.round(Math.random() * 20)+105 + "vh";
       x.style.left = Math.round(Math.random() * 80) + "vw";
 
     }
