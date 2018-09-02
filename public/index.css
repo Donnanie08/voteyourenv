@@ -117,6 +117,7 @@ body {
 
 /* Navigation */
 nav {
+    z-index: 500;
     height: 40px;
     width: 100%;
     background-color: #015249;
@@ -141,9 +142,7 @@ nav a {
     color: #eee;
     text-decoration: none;
 }
-nav li:hover {
-    background-color: #444;
-}
+
 nav a#openup {
     display: none;
 }
