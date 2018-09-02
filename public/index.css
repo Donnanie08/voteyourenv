@@ -2,8 +2,8 @@
 
 /* CSS Variables */
 :root {
-    --primary-color: #545758;
-    --primary-color-hover: #222527;
+    --primary-color: #57BC90;
+    --primary-color-hover: #015249;
     --secondary-color: #103063;
     --secondary-color-hover: #143f85;
     --light-color: #f4f4f4;
@@ -16,7 +16,8 @@ a {
 
 /* body */
 body {
-    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: "Teko", sans-serif;
     /*background: linear-gradient(to bottom, #A7AFB1, #D8DEE0, #F6F9F2, #FEFAD3, #E7A94F);*/
     margin: 0;
     line-height: 1.6;
@@ -57,6 +58,14 @@ body {
 #homepage h1 {
     font-size: 4rem;
     margin-bottom: 0;
+    font: 'Raleway', sans-serif;
+    color: rgba(1,82,73,.8);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    /* position: absolute; */
+    top: 25%;
+    width: 100%;
 }
 
 #homepage h2 {
@@ -110,7 +119,7 @@ body {
 nav {
     height: 40px;
     width: 100%;
-    background-color: #333;
+    background-color: #015249;
     color: #eee;
     position: fixed;
 }
