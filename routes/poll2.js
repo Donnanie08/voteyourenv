@@ -19,7 +19,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    console.log(data);
     //save to database
     const newVote = {
         vehicle: req.body.vehicle,

@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 //databse config file
-require('./config/db');
+// require('./config/db');
 require('./config/db2');
 
 const app = express();

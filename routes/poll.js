@@ -20,7 +20,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    console.log(data);
     //save the points to database
     const newVote = {
         env: req.body.env,
