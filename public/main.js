@@ -39,16 +39,40 @@ fetch('http://localhost:3000/poll').then(res => res.json())
     const chartContainer = document.querySelector('#chartContainer');
     
     if(chartContainer){
+        CanvasJS.addColorSet("greenShades",
+        [//colorSet Array
+        "#2F4F4F",
+        "#008080"               
+        ]);
+
         const chart = new CanvasJS.Chart('chartContainer', {
             animationEnabled: true,
             theme: 'theme1',
+            backgroundColor: "transparent",
+            colorSet: "greenShades",
+            axisY:{
+                title: "",
+                tickLength: 0,
+                lineThickness:0,
+                gridThickness: 0,
+                margin:0,
+                valueFormatString:" " //comment this to show numeric values
+            },
+            axisX: {
+                tickLength: 0,
+                lineThickness:0,
+                valueFormatString:" "
+            },
             title: {
-                text: `Total Votes: ${totalVotes}`
+                text: `Total Reading Votes: ${totalVotes}`,
+                fontColor: "#364E4F",
+                fontSize: 30
             },
             data: [
                 {
-                    type: 'column',
-                    dataPoints: dataPoints
+                    type: 'bar',
+                    dataPoints: dataPoints,
+                    indexLabel: "{y}"
                 }
             ]
         });

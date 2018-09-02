@@ -42,7 +42,7 @@ fetch('http://localhost:3000/poll').then(res => res.json())
       // x.style.top = Math.round(Math.random() * w) + "px";
       // x.style.left = Math.round(Math.random() * h) + "px";
       x.style.top = Math.round(Math.random() * 20)+155 + "vh";
-      x.style.left = Math.round(Math.random() * 80) + "vw";
+      x.style.left = Math.round(Math.random() * 90) + "vw";
 
     }
 
@@ -92,7 +92,7 @@ fetch('http://localhost:3000/poll2').then(res => res.json())
       // x.style.top = Math.round(Math.random() * w) + "px";
       // x.style.left = Math.round(Math.random() * h) + "px";
       x.style.top = Math.round(Math.random() * 20)+105 + "vh";
-      x.style.left = Math.round(Math.random() * 80) + "vw";
+      x.style.left = Math.round(Math.random() * 90) + "vw";
 
     }
 
@@ -125,6 +125,11 @@ fetch('http://localhost:3000/poll').then(res => res.json())
     const chartContainer = document.querySelector('#chartContainer');
     
     if(chartContainer){
+        CanvasJS.addColorSet("greenShades",
+        [//colorSet Array
+        "#2F4F4F",
+        "#008080"               
+        ]);
         const chart = new CanvasJS.Chart('chartContainer', {
             
 
@@ -136,11 +141,17 @@ fetch('http://localhost:3000/poll').then(res => res.json())
                 title: "",
                 tickLength: 0,
                 lineThickness:0,
+                gridThickness: 0,
                 margin:0,
                 valueFormatString:" " //comment this to show numeric values
             },
+            axisX: {
+                tickLength: 0,
+                lineThickness:0,
+                margin: 20
+            },
             title: {
-                text: `Total Votes: ${totalVotes}`,
+                text: `Total Reading Votes: ${totalVotes}`,
                 fontColor: "#364E4F",
                 fontSize: 30
             },
@@ -210,11 +221,25 @@ fetch('http://localhost:3000/poll2').then(res => res.json())
 
         const chart = new CanvasJS.Chart('chartContainer2', {
             animationEnabled: true,
-            theme: 'light1',
+            theme: 'theme1',
             backgroundColor: "transparent",
             colorSet: "greenShades",
+            axisY:{
+                title: "",
+                tickLength: 0,
+                lineThickness:0,
+                gridThickness: 0,
+                margin:0,
+                valueFormatString:" " //comment this to show numeric values
+            },
+            axisX: {
+                tickLength: 0,
+                lineThickness:0
+            },
             title: {
-                text: `Total Vehicle Votes: ${totalVotes}`
+                text: `Total Vehicle Votes: ${totalVotes}`,
+                fontColor: "#364E4F",
+                fontSize: 30
             },
             data: [
                 {

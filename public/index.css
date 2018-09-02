@@ -122,6 +122,7 @@ nav {
     background-color: #015249;
     color: #eee;
     position: fixed;
+    z-index: 500;
 }
 nav ul {
     padding: 0;
