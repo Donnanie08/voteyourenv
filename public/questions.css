@@ -57,6 +57,12 @@ h3 {
     overflow: hidden;
 }
 
+.chartContainer{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+}
+
 
   .list {
     flex: 0 0 20rem;
