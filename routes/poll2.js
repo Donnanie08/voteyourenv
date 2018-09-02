@@ -19,18 +19,19 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+    console.log(data);
     //save to database
     const newVote = {
         vehicle: req.body.vehicle,
         points: 1
     }
-    
+
     new Vote(newVote).save().then(vote => {
         pusher.trigger('vehicle-poll', 'vehicle-vote', {
             points: parseInt(vote.points),
             vehicle: vote.vehicle
           });
-          return res.json({success: true, message: "thank your for vehicle voting"});    
+          return res.json({success: true, message: "thank your for vehicle voting"});
     });
 
     });
