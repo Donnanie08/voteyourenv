@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Scheme2 = mongoose.Schema;
 
 const VoteSchema2 = new Scheme({
-    env: {
+    vehicle: {
         type: String,
         required: true
     },
@@ -13,6 +13,6 @@ const VoteSchema2 = new Scheme({
 });
 
 //Create collection and add scheme
-const Vote2 = mongoose.model('Vote', VoteSchema2);
+const Vote2 = mongoose.model('Vote2', VoteSchema2);
 
 module.exports = Vote2;

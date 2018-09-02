@@ -41,7 +41,7 @@ fetch('http://localhost:3000/poll').then(res => res.json())
     if(chartContainer){
         const chart = new CanvasJS.Chart('chartContainer', {
             animationEnabled: true,
-            theme: 'theme1',
+            theme: 'theme3',
             title: {
                 text: `Total Votes: ${totalVotes}`
             },
