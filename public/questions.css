@@ -29,10 +29,6 @@ a {
     color: #ccc;
 }
 
-@media screen and (max-width: 580px) {
-    .chartContainer {
-        width: 100%;
-    }
 
 /* body */
 body {
