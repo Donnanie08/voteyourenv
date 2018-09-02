@@ -17,7 +17,7 @@ fetch('http://localhost:3000/poll').then(res => res.json())
       h = screen.width - x.width;
       x.setAttribute("src", "http://www.onlygfx.com/wp-content/uploads/2017/04/watercolor-pine-tree-1.png");
       x.setAttribute("width", "100");
-      x.setAttribute("height", "110");
+      x.setAttribute("height", "200");
       x.setAttribute("alt", "tree");
       // x.setAttribute("id", "cloud0");
 
@@ -25,7 +25,7 @@ fetch('http://localhost:3000/poll').then(res => res.json())
 
       // x.style.top = Math.round(Math.random() * w) + "px";
       // x.style.left = Math.round(Math.random() * h) + "px";
-      x.style.top = Math.round(Math.random() * 20)+165 + "vh";
+      x.style.top = Math.round(Math.random() * 20)+155 + "vh";
       x.style.left = Math.round(Math.random() * 80) + "vw";
 
     }
