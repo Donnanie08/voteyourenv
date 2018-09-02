@@ -1,0 +1,11 @@
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    position: relative;
+    opacity: 1;
+}
+
+body {
+    background: linear-gradient(to bottom, #A7AFB1, #D8DEE0, #F6F9F2, #FEFAD3, #E7A94F);
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 0;
+}
